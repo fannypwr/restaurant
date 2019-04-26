@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+<ol style="display: inline-block; background-color: #1278ef;">
+    {% for m in object_list %}
+
+    {% include 'menu/menu.html' %}
+
+    {% endfor %}
+</ol>
+<div id="menuDisplay" style="display: inline-block; background-color: #efef12;">
+    <div id="menuName"></div>
+    <div id="menuDescription"></div>
+    <div id="menuPrepared"></div>
+    <div id="menuPrice"></div>
+    <div id="dishes"></div>
+</div>
+</body>
+</html>
